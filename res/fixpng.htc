@@ -1,0 +1,31 @@
+<public:component>
+<public:attach event="onpropertychange" onevent="onpropertychange()" />
+<script>
+var realsrc, blanksrc = '/res/blank.gif';
+if (/MSIE (5\.5|6)/.test(navigator.userAgent) && navigator.platform == "Win32") {
+	fix();
+}
+
+function onpropertychange() {
+	if (supported && event.propertyName == 'src') {
+		if (!new RegExp(blanksrc).test(src)) fix();
+	}
+}
+
+function fix() {
+	var src = element.src;
+	if (src == realsrc) {
+		element.src = blanksrc;
+		return;
+	}
+
+	if (!new RegExp(blanksrc).test(src)) realsrc = src;
+	if (/\.png$/.test(realsrc.toLowerCase())) {
+		element.src = blanksrc;
+		element.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "',sizingMethod='scale')";
+	} else {
+		element.runtimeStyle.filter = '';
+	}
+}
+</script>
+</public:component>

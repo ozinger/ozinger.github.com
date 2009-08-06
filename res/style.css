@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+* {
+	color: inherit;
+}
+body, input, select {
+	font-family:
+		"나눔고딕", "NanumGothic", "맑은 고딕", "Malgun Gothic",
+		"Lucida Grande", "AppleGothic", "Verdana", "돋움", "Dotum",
+		"Luxi Sans", "은 돋움", "UnDotum", "Baekmuk Gulim",
+		"Arial", "Helvetica", sans-serif;
+}
+code, pre, var, samp, kbd, tt, textarea {
+	font-family:
+		"NanumGothic_Coding", "나눔고딕_코딩",
+		"Andale Mono", "Monaco", "AppleGothic", "Lucida Console",
+		"돋움체", "DotumChe", "Luxi Mono", monospace;
+}
+
+body {
+	background: #4c1e69 url(back.jpg) repeat-x;
+	font-size: 0.9em;
+	height: 100%;
+	margin: 0;
+	line-height: 1.6;
+}
+.intro {
+	background: white url(tile.png) repeat;
+	font-size: 160%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.intro h1 {
+	font-size: 200%;
+	font-weight: bold;
+	color: #5c2b7a;
+	width: 800px;
+	margin: 0 auto;
+	line-height: 1;
+}
+.intro h1 img {
+	vertical-align: top;
+}
+.intro p {
+	color: black;
+	width: 580px;
+	margin: 0.8em auto 0 auto;
+	padding-left: 8px;
+	padding-right: 212px;
+	line-height: 1.5;
+}
+.main {
+	background: url(separator.jpg) repeat-x;
+	text-align: center;
+}
+.menu {
+	text-align: left;
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0;
+	height: 4em;
+}
+.menu li {
+	float: left;
+	margin: 2.2em 1.5em 0.8em 0.5em;
+	padding: 0;
+}
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+.menu a:hover, .menu a:active {
+	color: white;
+	text-decoration: underline;
+}
+.menu .selected a {
+	font-weight: bold;
+}
+.contents {
+	background: url(contents.jpg) repeat-y;
+	text-align: justify;
+	width: 600px;
+	margin: 0.8em auto 0 auto;
+	padding: 1px 200px 1px 0;
+}
+.nav {
+	background: #edeff1;
+	border-top: 2px solid #e4e4e5;
+	border-bottom: 2px solid #e4e4e5;
+	padding: 0 0.3em;
+}
+.nav a {
+	color: #8149a0;
+}
+.footer {
+	font-size: 80%;
+	width: 795px;
+	margin: 0.5em auto;
+	padding: 0;
+	padding-bottom: 4em;
+	color: white;
+}
+
+a {
+	color: #d45500;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	color: #88aa00;
+}
+a:visited {
+	text-decoration: none;
+}
+p {
+	margin: 0.5em;
+}
+h2 {
+	font-size: 160%;
+	margin: 1em 0.3em 0.5em 0.3em;
+	color: #8149a0;
+}
+h2:first-child {
+	margin-top: 0.5em;
+}
+h3 {
+	font-size: 120%;
+	margin: 0.8em 0.4em 0.4em 0.4em;
+	color: black;
+}
+h3:first-child {
+	margin-top: 0.4em;
+}
+pre {
+	background: black;
+	color: white;
+	margin: 0.5em;
+	padding: 0.3em 0.5em;
+}
+ul {
+	margin: 0.5em;
+	padding: 0 0 0 1.5em;
+}
+ol {
+	margin: 0.5em;
+	padding: 0 0 0 1.5em;
+}
+dl {
+	margin: 0.5em;
+	padding: 0;
+}
+dt {
+	font-weight: bold;
+	color: #5c2b7a;
+}
+table {
+	border-top: 2px solid #4c1e69;
+	border-bottom: 2px solid #4c1e69;
+	border-collapse: collapse;
+	text-align: center;
+	margin: 1em 0.5em;
+}
+table * {
+	text-align: left;
+}
+thead tr * {
+	border-bottom: 1px solid #4c1e69;
+	color: #4c1e69;
+}
+tfoot tr * {
+	border-top: 1px solid #4c1e69;
+	color: #4c1e69;
+}
+th {
+	font-weight: bold;
+	padding: 3px 5px;
+	vertical-align: top;
+	white-space: nowrap;
+}
+td {
+	padding: 3px 5px;
+	vertical-align: top;
+}
+

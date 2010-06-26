@@ -112,6 +112,10 @@ a:hover, a:active {
 a:visited {
 	text-decoration: none;
 }
+em {
+	font-style: normal;
+	text-decoration: underline;
+}
 p {
 	margin: 0.5em;
 }

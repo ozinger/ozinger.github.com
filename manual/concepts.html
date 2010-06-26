@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="ko" />
+	<title>사용법: IRC 개념들 | 오징어 IRC 네트워크</title>
+	<meta name="author" content="오징어 IRC 네트워크" />
+	<link rel="stylesheet" href="/res/style.css" media="screen" type="text/css" />
+	<!--[if lte IE 6]><style type="text/css">img { behavior: url(/res/fixpng.htc); }</style><![endif]-->
+</head>
+<body>
+<div class="intro">
+<h1><img src="/res/name.png" width="480" height="70" alt="오징어 IRC 네트워크" /></h1>
+</div>
+
+<div class="main">
+<ul class="menu">
+	<li><a href="/index">처음</a></li>
+	<li><a href="/intro">소개</a></li>
+	<li><a href="/servers">서버 목록</a></li>
+	<li class="selected"><a href="/manual/">사용법</a></li>
+	<li><a href="/faq">자주 묻는 것</a></li>
+	<li><a href="/dev/">개발</a></li>
+</ul>
+
+<div class="contents">
+<p class="nav"><a href="/manual/">오징어 매뉴얼</a> &rarr; 개념 잡기 &rarr; <strong>IRC 개념들</strong></p>
+
+<h2>IRC 개념들</h2>
+<p>IRC의 세계에 오신 것을 환영합니다! 그런데 IRC가 뭔지 모르겠다고요? IRC는 쉽게 말하자면 <em>채팅을 하는 방법</em>입니다. IRC를 쓰면 자기가 원하는 주제에 관심을 가진 사람들끼리 모여서 대화를 할 수 있습니다. 물론 문자로요.</p>
+<p>이미 채팅을 해 본 적이 있지만 IRC는 접해 본 적이 없는 사람이라면 IRC가 왜 있는 건지 의아해 할 수도 있습니다. 하지만 IRC는 다른 채팅 사이트나 프로그램과는 차별되는 중요한 특징이 있습니다.</p>
+<ul>
+	<li><strong>자기가 원하는 방법으로 접속할 수 있습니다.</strong> IRC 클라이언트라고 불리는 다양한 프로그램들을 쓸 수도 있고, 그냥 바로 웹이나 휴대폰에서 접속하거나 심지어는 자동화된 프로그램("봇"이라고 부릅니다)으로까지 접속할 수 있습니다. 채팅 사이트가 불편하면 불편한 대로 살아야 하지만 IRC에서는 그냥 자기가 좋은 방법으로 갈아 타면 됩니다.</li>
+	<li><strong>다양한 모습으로 관리할 수 있습니다.</strong> <a href="channels">채널</a>에 대해서는 뒤에 설명하겠지만 사람을 초대하거나, 강퇴시키거나, 원하는 사람들만 말할 수 있게 하거나 권한을 주는 등 여러 가지로 쓸 수 있습니다. <small>(엄밀히 말하면 이건 IRC 자체의 기능은 아닙니다만 대부분에 해당되는 사항입니다.)</small></li>
+	<li><strong>다양한 편의 기능을 제공합니다.</strong> 많은 IRC 클라이언트들이 자기를 부르는 것을 감지해서 표시해 주거나, 대화 중에 나온 주소들을 모아서 보여 주거나 하는 등의 편의 기능을 제공하며, 일부는 여러분이 직접 새 기능을 만들 수 있도록 스크립트를 지원하기도 합니다. 또한 IRC 봇들을 사용하면 대화 도중에 날씨를 살피거나 검색을 하는 등의 더 많은 기능을 쓸 수 있습니다.</li>
+</ul>
+<p>즉, IRC는 특정한 사이트나 프로그램에 상관 없이 대화를 하려면 최적의 방법이라 할 수 있습니다.</p>
+
+<h3>한 번 써 보자!</h3>
+<p>복잡한 걸 싫어하신다면 한 번 IRC를 직접 써 보는 건 어떨까요? 아래 창에서 "#ozinger 대화방 입장" 버튼을 누르고, "닉네임" 부분에 자기가 원하는 이름을 써 넣은 뒤 "입장"을 누르면 IRC에 접속할 수 있습니다!</p>
+<div style="margin:0.5em"><script type="text/javascript" src="http://app.barosl.com/inklwebirc/embed/ozinger/ozinger/?width=580&amp;height=400&amp;css=http://ozinger.org/res/style.webirc.css"></script></div>
+<noscript><p>자바스크립트가 없는 곳에서는 <a href="/manual/#clients">접속 방법</a>을 참고해서 #ozinger 채널로 들어 가 주세요.</p></noscript>
+<p>(위 창에서 대화를 할 때는 예의를 갖추고 대화해 주시고 장난은 삼가 주세요.)</p>
+
+<h3>기본 개념</h3>
+<p>앞에서 한 번 IRC를 써 봤는데, 사실 별 건 아니지만 몇 가지 중요한 용어가 있기 때문에 생소할 수 있습니다. 그래서 몇 가지 중요한 것만 간단히 알아 두죠.</p>
+<ul>
+	<li><strong>채널</strong>은 같은 주제를 가진 사람들끼리 모여서 대화를 하는 하나의 <em>장소</em>입니다. 한 사람은 여러 채널에 들어 갈 수 있습니다.</li>
+	<li><strong>채널 이름</strong>은 채널의 이름입니다. IRC에서 채널 이름은 <code>#</code>로 시작하고 그 뒤에 띄어쓰기 없이 이름을 붙여 쓰는데, 이를테면 고양이에 대한 채널은 <code>#고양이</code> 또는 <code>#cat</code> 같은 이름을 쓰겠지요. 물론 채널 이름을 정하는 건 다른 채널과 겹치지 않는 한 자유입니다.</li>
+	<li><strong>닉네임</strong> 또는 <strong>닉</strong>은 여러분이 IRC에서 사용하는 이름입니다. 닉은 여러 채널에서 공유되고, 닉을 바꾸면 모든 채널에서 바뀐 게 보입니다.</li>
+	<li><strong>IRC 네트워크</strong>, <strong>IRC 서버</strong> 등은 사람들이 채널들에 들어 가기 위해서 접속하는 곳입니다. 채널은 하나의 IRC 네트워크에 속하고, 서로 연결되지 않은 IRC 네트워크 사이에서 사람들끼리 대화를 할 수는 없습니다. (따라서 채널도 닉도 공유되지 않습니다!)</li>
+</ul>
+<p>오징어 IRC 네트워크는 (이름이 말해 주듯) IRC 네트워크의 일종이고, 그 밖에도 <a href="http://hanirc.org/">HanIRC</a>, <a href="http://dankun.net/">단군넷</a> 같은 커다란 IRC 네트워크가 있습니다. 그리고 방금 전에 접속한 채널은 <code>#ozinger</code> 채널로 오징어 IRC 네트워크에 대한 논의를 하는 채널이랍니다.</p>
+
+<h3>이제 어쩔까요</h3>
+<p>먼저 <a href="/manual/#clients">접속 방법</a>을 참고해서 어떻게 접속하는 지 알아 보고 (위의 창에서 할 수도 있지만 별로 추천하진 않습니다), 무슨 채널에 들어 갈지 알아 보면 됩니다. 채널 목록은 접속 뒤 보통 <a href="commands#list"><code>/LIST</code></a> 명령을 써서 볼 수 있고, 만약 자기가 들어 가고 싶은 채널의 이름을 알고 있다면 그냥 바로 접속하는 방법도 있습니다.</p>
+<p>어느 경우든 어느 채널에 들어 가는지는 여러분에게 달렸습니다. 즐거운 채팅 하세요 :) 이 매뉴얼의 나머지 부분은 오징어에서 채널을 관리하거나 하는 좀 더 복잡한 얘기에 대해서만 다룹니다.</p>
+
+</div>
+</div>
+
+<div class="footer">
+<p>Copyright &copy; 2009, Ozinger Network. Some Rights Reserved.</p>
+</div>
+
+</body>
+</html>

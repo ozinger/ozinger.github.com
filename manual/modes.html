@@ -47,9 +47,9 @@
 	<tr id="usermode-o"><th><code>+o</code></th><td>관리자(오퍼) 권한을 나타냅니다. 이 모드는 <a href="commands#oper"><code>/OPER</code></a> 명령을 통해서만 얻을 수 있습니다.</td></tr>
 	<tr id="usermode-r"><th><code>+r</code></th><td><a href="services">서비스 봇</a>에 로그인해 있음을 나타냅니다.</td></tr>
 	<tr id="usermode-s"><th><code>+s</code></th><td>사용자가 <a href="snomasks">서버 공지</a>를 받을 수 있도록 합니다. 이 명령은 관리자만 사용할 수 있습니다.</td></tr>
-	<tr id="usermode-w"><th><code>+w</code></th><td></td></tr>
+<!--	<tr id="usermode-w"><th><code>+w</code></th><td></td></tr>-->
 	<tr id="usermode-x"><th><code>+x</code></th><td>호스트 이름을 숨겨서 아무나 자신의 IP 주소를 볼수 없게 만듭니다. 이 모드를 설정하면 다른 사람에게는 나갔다 들어 온 것으로 보이게 됩니다.</td></tr>
-	<tr id="usermode-G"><th><code>+G</code></th><td></td></tr>
+<!--	<tr id="usermode-G"><th><code>+G</code></th><td></td></tr>-->
 	<tr id="usermode-I"><th><code>+I</code></th><td><a href="commands#whois"><code>/WHOIS</code></a> 명령에서 자신이 들어간 채널 목록을 아예 보이지 않도록 합니다.</td></tr>
 	<tr id="usermode-R"><th><code>+R</code></th><td><a href="services">서비스 봇</a>에 등록된 사용자만 쿼리를 보낼 수 있도록 허용합니다.</td></tr>
 	<tr id="usermode-S"><th><code>+S</code></th><td>쿼리를 받을 때 색깔이 들어 있는 글은 모두 색깔을 빼 주도록 합니다.</td></tr>
@@ -87,7 +87,7 @@
 	<tr id="chanmode-j"><th><code>+j&nbsp;(사람수):(시간)</code></th><td>지정된 시간(초 단위)동안 최대 지정한 만큼의 사람 수만 들어 올 수 있게 합니다.<br />만약 이 모드 때문에 사람이 들어 올 수 없는 상태에서 사람 수를 처음부터 다시 세게 하려면, 모드를 지웠다가 다시 등록하면 됩니다.</td></tr>
 	<tr id="chanmode-k"><th><code>+k&nbsp;(암호)</code></th><td>채널에 들어 올 때 맞는 암호를 입력해야 들어 올 수 있게 합니다. 초대를 받은 사용자는 암호를 입력하지 않고도 들어 올 수 있습니다.<br />일부 클라이언트는 채널 암호를 아무 여과 없이 그대로 보여 주는 경우도 있습니다. 따라서 채널 암호는 공개될 가능성을 염두에 두고 설정해야 합니다.</td></tr>
 	<tr id="chanmode-l"><th><code>+l&nbsp;(사람수)</code></th><td>채널에 지정한 숫자 이상으로 사람이 들어 올 수 없게 합니다. 만약 채널이 꽉 찼을 때 다른 채널로 가게 하고 싶으면 <a href="#chanmode-L"><code>+L</code></a> 모드를 참고하세요.</td></tr>
-	<tr id="chanmode-z"><th><code>+z</code></th><td></td></tr>
+<!--	<tr id="chanmode-z"><th><code>+z</code></th><td></td></tr>-->
 	<tr id="chanmode-I"><th><code>+I&nbsp;(마스크)</code></th><td><a href="#chanmode-i"><code>+i</code></a> 모드가 설정되어 있더라도 해당하는 사용자는 초대 없이 그냥 입장할 수 있게 합니다.</td></tr>
 	<tr id="chanmode-J"><th><code>+J&nbsp;(시간)</code></th><td><a href="commands#kick"><code>/KICK</code></a> 명령으로 퇴장당한 뒤 지정한 시간(초 단위)동안은 다시 들어 올 수 없게 합니다. 킥 당했을 때 자동으로 다시 입장하려는 클라이언트를 막는데 쓸 수 있습니다.</td></tr>
 	<tr id="chanmode-K"><th><code>+K</code></th><td>채널에 대해 <a href="commands#knock"><code>/KNOCK</code></a> 명령을 사용할 수 없게 합니다. (이 모드가 설정되어 있어도 초대는 여전히 가능합니다.)</td></tr>
@@ -110,7 +110,7 @@
 	<tr id="chanmode-m"><th><code>+m</code></th><td>중재식 대화를 설정합니다. 즉, 옵/하프옵/보이스가 설정되어 있지 않은 사용자는 (설령 보호된 사용자라 하더라도) 말할 수 없습니다.</td></tr>
 	<tr id="chanmode-n"><th><code>+n</code></th><td>채널에 들어 있지 않은 사람은 채널 안에서 말할 수 없도록 합니다. 오징어에서는 처음 채널을 만들 때 이 모드가 기본으로 설정되어 있습니다.</td></tr>
 	<tr id="chanmode-C"><th><code>+C</code></th><td>채널에서 CTCP(예를 들어서 <code>/me</code> 같은 류의 명령)를 사용할 수 없게 합니다.</td></tr>
-	<tr id="chanmode-G"><th><code>+G</code></th><td></td></tr>
+<!--	<tr id="chanmode-G"><th><code>+G</code></th><td></td></tr>-->
 	<tr id="chanmode-M"><th><code>+M</code></th><td><a href="services">서비스 봇</a>에 로그인한 사용자만 말할 수 있게 합니다.</td></tr>
 	<tr id="chanmode-S"><th><code>+S</code></th><td>채널 안에서 색깔이 들어 있는 글은 모두 색깔을 빼 주도록 합니다. (색글을 아예 입력 못 하게 하는 <a href="#chanmode-c"><code>+c</code></a>와는 다릅니다.)</td></tr>
 	<tr id="chanmode-T"><th><code>+T</code></th><td>채널 노티스를 사용할 수 없게 합니다.</td></tr>

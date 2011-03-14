@@ -66,14 +66,16 @@ inspircd.conf 설정
 # 서버 암호는 관리자들끼리 만나서 결정해야 하며 서로 같아야 한다!
 # XXX: 네트워크 topology를 graph 모양으로 하는 게 아직 안 되는 듯.
 #      현재로서는 link 태그는 하나만 있어야 한다.
-<link name="[호스트명].irc.ozinger.org" ipaddr="[IP 주소]" port="7001" autoconnect="120"
+<link name="[호스트명].irc.ozinger.org" ipaddr="[IP 주소]" port="7001"
       sendpass="[서버 암호]"
       recvpass="[서버 암호]">
+
+<autoconnect period="60" server="[호스트명].irc.ozinger.org">
 
 <oper name="[관리자 이름 (닉과 무관)]" host="*@*" type="NetAdmin"
       hash="sha256" password="[암호를 SHA-256으로 해시한 값]">
 
-<include file="inspircd.oz.conf">
+<include file="conf/inspircd.oz.conf">
 
 
 

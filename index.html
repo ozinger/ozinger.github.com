@@ -30,11 +30,45 @@
 <p><strong>mIRC나 mIRC 계열 클라이언트를 쓰시는 분께서는 <a href="mirc/">mIRC에서의 사용법</a>을 먼저 참고해 주세요.</strong> 오징어는 <a href="http://barosl.com/webirc/ozinger/">인클 웹 IRC</a>로 접속할 수도 있습니다.</p>
 <p>오징어 네트워크에 대한 일반적인 토론은 #ozinger 채널에서 해 주세요.</p>
 
+<div class="twitter">
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 6000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#5c2b7a',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#d45500'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('ozingerirc').start();
+</script>
 </div>
 </div>
 
+</div>
+
 <div class="footer">
-<p>Copyright &copy; 2009, Ozinger Network. Some Rights Reserved.</p>
+<p>Copyright &copy; 2009&ndash;2011, Ozinger Network. Some Rights Reserved.</p>
 </div>
 
 </body>

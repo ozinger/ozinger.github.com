@@ -84,6 +84,9 @@ body {
 	margin: 0.8em auto 0 auto;
 	padding: 1px 200px 1px 0;
 }
+.twitter {
+	margin: 0.5em;
+}
 .nav {
 	background: #edeff1;
 	border-top: 2px solid #e4e4e5;

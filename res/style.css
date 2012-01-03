@@ -12,7 +12,7 @@ body, input, select {
 }
 code, pre, var, samp, kbd, tt, textarea {
 	font-family:
-		"NanumGothic_Coding", "나눔고딕_코딩",
+		"NanumGothicCoding", "나눔고딕코딩",
 		"Andale Mono", "Monaco", "AppleGothic", "Lucida Console",
 		"돋움체", "DotumChe", "Luxi Mono", monospace;
 }
@@ -25,7 +25,7 @@ body {
 	line-height: 1.6;
 }
 .intro {
-	background: white url(tile.png) repeat;
+	background: #f4f4f4 url(tile.png) repeat;
 	font-size: 160%;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -43,11 +43,47 @@ body {
 }
 .intro p {
 	color: black;
-	width: 580px;
+	width: 480px;
 	margin: 0.8em auto 0 auto;
 	padding-left: 8px;
-	padding-right: 212px;
+	padding-right: 312px;
 	line-height: 1.5;
+}
+.address {
+	width: 280px;
+	background: #666;
+	border-radius: 20px;
+	box-shadow: 5px 5px 0 #000;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: 100px;
+	color: #f4f4f4;
+	font-size: 62.5%;
+	padding: 10px;
+}
+.address a {
+	color: #e28d55;
+}
+.address h2 {
+	display: none;
+}
+.address p {
+	width: 260px;
+	text-align: center;
+	font-size: 200%;
+	margin: 0;
+	line-height: 1;
+	color: #f4f4f4;
+}
+.address small {
+	font-size: 50%;
+}
+.address ul {
+	padding: 0;
+	list-style-position: inside;
+	margin-top: 1em;
+	margin-bottom: 0;
 }
 .main {
 	background: url(separator.jpg) repeat-x;
@@ -119,6 +155,18 @@ em {
 	font-style: normal;
 	text-decoration: underline;
 }
+.label {
+	background: gray;
+	color: white;
+	font-size: 80%;
+	font-weight: 100;
+	padding: 1px 3px;
+	margin: 0 1px;
+	border-radius: 4px;
+}
+.label.r { background: #c44; }
+.label.g { background: #4c4; }
+.label.b { background: #44c; }
 p {
 	margin: 0.5em;
 }

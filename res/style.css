@@ -167,6 +167,7 @@ em {
 .label.r { background: #c44; }
 .label.g { background: #4c4; }
 .label.b { background: #44c; }
+.label.y { background: #aa4; }
 p {
 	margin: 0.5em;
 }

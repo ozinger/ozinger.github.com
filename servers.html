@@ -22,25 +22,32 @@
 </ul>
 
 <div class="contents">
-<p>오징어 IRC 네트워크는 2012년 8월 19일 현재 다음 서버들로 이루어져 있습니다. <strong>아래 목록은 참고 용도일 뿐입니다! 보통은 irc.ozinger.org으로 접속하는 것으로 충분합니다.</strong></p>
+<p>오징어 IRC 네트워크는 다양한 접속 방법을 지원합니다. 다음 주소 중 적절한 것을 골라 쓰세요.</p>
+<dl>
+	<dt>irc.ozinger.org (포트 6661&ndash;6669, 8080)</dt>
+	<dd>별다른 이유가 없으면 이 주소로 접속하면 됩니다. IRC 기본 포트 6667이 막힌 경우 끝자리를 바꿔 가면서 되는 포트를 찾아 보세요.</dd>
+	<dt>webirc.ozinger.org (포트 8080)</dt>
+	<dd>여기에 속해 있는 서버들은 플래시 클라이언트(<a href="http://barosl.com/webirc/">인클 웹 IRC</a>, <a href="http://firc.arzz.com/">fIRC</a> 등)를 위한 정책 서버가 실행되어 있습니다.</dd>
+	<dt>altirc.ozinger.org (포트 80, 443)</dt>
+	<dd>irc.ozinger.org가 제공하는 포트가 모조리 막혔을 때만 사용하세요. 포트 80은 기본 접속, 443은 SSL 접속입니다. 이 서버들은 irc.ozinger.org보다 불안정할 수 있습니다.</dd>
+	<dt>ssl.ozinger.org (포트 16666&ndash;16667)</dt>
+	<dd>SSL을 사용하여 접속합니다. 자세한 접속 방법은 <a href="/manual/ssl">사용법</a> 문서를 참고하세요. 여기에 포함된 모든 서버는 동일한 인증서를 사용합니다만, 2012년 9월 현재 이 인증서는 공식은 아니기 때문에 <a href="http://en.wikipedia.org/wiki/Man-in-the-middle_attack">MITM 공격</a>을 막기에는 불충분하다는 점을 감안해 주세요.</dd>
+</dl>
 
+<p>각 주소에 속해 있는 실제 서버들은 2012년 9월 10일 현재 다음과 같습니다. <strong>아래 목록은 참고 용도일 뿐입니다! 가급적이면 위에 있는 대표 주소들만 사용해 주세요.</strong></p>
 <table>
 <thead>
-	<tr><th>호스트명</th><th>아이피 및 포트 대역</th><th>운영주체</th></tr>
+	<tr><th>호스트명</th><th>아이피</th><th>운영주체</th></tr>
 </thead>
 <tbody>
-	<tr><th>irc.ozinger.org</th><td>(<span class="label r">irc</span>에 포함된 서버들)<br /><small>포트 6661&ndash;6669, 8080</small></td><td>(대표 도메인)</td></tr>
-	<tr><th>webirc.ozinger.org</th><td>(<span class="label g">webirc</span>에 포함된 서버들)<br /><small>포트 8080</small></td><td>(대표 도메인)</td></tr>
-	<tr><th>ssl.ozinger.org</th><td>(<span class="label b">ssl</span>에 포함된 서버들)<br /><small>포트 16666&ndash;16667</small></td><td>(대표 도메인)</td></tr>
 	<tr><th>ocarina.irc.ozinger.org <span class="label r">irc</span> <span class="label g">webirc</span> <span class="label b">ssl</span></th><td>222.122.156.78</td><td><a href="http://ruree.net/">루리넷</a></td></tr>
-	<tr><th>devmint.irc.ozinger.org <span class="label r">irc</span></th><td>1.226.84.85</td><td><a href="http://devmint.com/">데브민트</a></td></tr>
+	<tr><th>devmint.irc.ozinger.org <span class="label r">irc</span> <span class="label b">ssl</span></th><td>1.234.75.234</td><td><a href="http://devmint.com/">데브민트</a></td></tr>
 	<tr><th>kanade.irc.ozinger.org <span class="label r">irc</span> <span class="label b">ssl</span></th><td>218.38.12.12</td><td><a href="http://devunt.kr/">dnetwork</a></td></tr>
+	<tr><th>hal.altirc.ozinger.org <span class="label y">altirc</span></th><td>14.37.134.209</td><td>dnetwork</td></tr>
 	<tr><th>services.ozinger.org <small>(서비스 봇)</small></th><td>222.122.156.78</td><td>루리넷</td></tr>
 	<tr><th>ozinger.org <small>(웹서버)</small></th><td>222.122.156.78 / <a href="http://ozinger.github.com/">GitHub</a></td><td>루리넷</td></tr>
 </tbody>
 </table>
-
-<p>webirc.ozinger.org는 플래시 클라이언트(<a href="http://barosl.com/webirc/">인클 웹 IRC</a>, <a href="http://firc.arzz.com/">fIRC</a> 등)를 위한 정책 서버가 실행되어 있는 서버입니다. 플래시 클라이언트를 만들 때는 이 도메인을 사용해야 합니다. (또한 최대한 많은 사용자가 사용할 수 있도록 포트를 8080으로 지정해 주세요.)</p>
 
 </div>
 </div>

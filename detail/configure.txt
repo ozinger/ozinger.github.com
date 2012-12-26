@@ -16,10 +16,10 @@
 
 1. 서버에 `irc` 사용자를 만든다. 암호는 알아서 잘...
 2. `irc` 사용자로 sudo 접속한다. (`sudo -u irc -s`)
-3. InspIRCd를 받는다. `http://hg.mearie.org/ozinger/inspircd/`에서 hg로 checkout하거나
+3. InspIRCd를 받는다. `https://github.com/ozinger/ozinger-inspircd`에서 git로 checkout하거나
    압축 파일로 받아서 `/usr/local/inspircd/` 정도 위치에 풀어 놓을 것.
    * `/usr/local/inspircd`가 아닌 위치에 받는 것도 가능하지만 권장하지는 않는다.
-   * hg 저장소와 실제 바이너리/모듈 등이 같이 들어 간다는 점을 주의할 것!
+   * git 저장소와 실제 바이너리/모듈 등이 같이 들어 간다는 점을 주의할 것!
 4. `/usr/local/inspircd/src/` 디렉토리에서
    `./configure --prefix=/usr/local/inspircd && make && make install`을 실행한다.
    컴파일이 끝난 뒤 `/usr/local/inspircd`에 디렉토리 여러 개와 `inspircd` 스크립트가 생겼는지

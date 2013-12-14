@@ -59,7 +59,7 @@ body {
 	left: 50%;
 	margin-left: 100px;
 	color: #f4f4f4;
-	font-size: 62.5%;
+	font-size: 54%;
 	padding: 10px;
 }
 .address a {
@@ -118,7 +118,7 @@ body {
 	text-align: justify;
 	width: 600px;
 	margin: 0.8em auto 0 auto;
-	padding: 1px 200px 1px 0;
+	padding: 5px 190px 5px 5px;
 }
 .twitter {
 	margin: 0.5em;

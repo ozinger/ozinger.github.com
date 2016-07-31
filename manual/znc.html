@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>사용법: ZNC에서 접속하기 | 오징어 IRC 네트워크</title>
+	<link rel="stylesheet" href="/res/style.css" media="screen" type="text/css" />
+	<!--[if lte IE 6]><style type="text/css">img { behavior: url(/res/fixpng.htc); }</style><![endif]-->
+</head>
+<body>
+<div class="intro">
+<h1><a href="/"><img src="/res/name.png" width="480" height="70" alt="오징어 IRC 네트워크" /></a></h1>
+</div>
+
+<div class="main">
+<ul class="menu">
+	<li><a href="/">처음</a></li>
+	<li><a href="/intro">소개</a></li>
+	<li><a href="/servers">서버 목록</a></li>
+	<li class="selected"><a href="/manual/">사용법</a></li>
+	<li><a href="/faq">자주 묻는 것</a></li>
+	<li><a href="/dev/">개발</a></li>
+</ul>
+
+<div class="contents">
+<p class="nav"><a href="/manual/">오징어 매뉴얼</a> &rarr; 접속하기 &rarr; <strong>ZNC</strong></p>
+
+<h2>ZNC</h2>
+
+<p><a href="https://znc.in/">http://znc.in/</a></p>
+
+<h3>소개</h3>
+
+<p><a href="http://znc.in/">ZNC</a>는 IRC 프록시입니다.</p>
+
+<h3>SSL 사용 팁</h3>
+
+<p네트워크별 설정의 >'Servers of this IRC network' 설정에 다음과 같이 +6697과 같이 "+포트번호" 형태로 지정하면 SSL을 사용합니다.</p>
+
+<pre>irc.ozinger.org +6697</pre>
+
+<p>오징어 IRC는 스스로 서명한(self-signed) 인증서를 사용하고 있기 때문에 이 인증서를 특별히 허용하도록 ZNC에 설정해야 합니다. 네트워크별 설정의 'Trusted SSL fingerprints of this IRC network'에 irc.ozinger.org의 SSL 인증서의 SHA256 핑거프린트를 설정하면 됩니다. 현재 핑거프린트는 다음과 같습니다.</p>
+
+<pre>
+71:01:8F:4B:C9:54:20:A4:88:CE:89:87:6D:D4:F6:78:DB:73:74:9C:00:D5:06:E5:72:49:F7:84:22:08:42:26
+</pre>
+
+<p>현재는 서버와 관계없이 인증서가 동일합니다. (만약 서버마다 다른 인증서를 사용하게 된다면 각 인증서의 핑거프린트를 한 줄에 하나씩 설정에 씁니다.)</p>
+
+<p>인증서가 바뀌면 셸 커맨드라인에서 다음과 같은 방법으로 OpenSSL을 사용해 해당 핑거프린트를 알아낼 수 있습니다.</p>
+
+<pre>
+$ echo -n | openssl s_client -connect irc.ozinger.org:6697 > ozinger-cert.pem 2>/dev/null
+$ openssl x509 -noout -in ozinger-cert.pem -fingerprint -sha256
+SHA256 Fingerprint=71:01:8F:4B:C9:54:20:A4:88:CE:89:87:6D:D4:F6:78:DB:73:74:9C:00:D5:06:E5:72:49:F7:84:22:08:42:26
+$
+</pre>
+
+
+</div>
+</div>
+
+<div class="footer">
+<p>Copyright &copy; 2009&ndash;2016, Ozinger Network. Some Rights Reserved.</p>
+</div>
+
+</body>
+</html>
